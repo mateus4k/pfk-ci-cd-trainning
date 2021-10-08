@@ -7,7 +7,7 @@ app.use(express.json());
 app.use(cors());
 
 app.get('/', (req, res) => {
-  res.send({ message: 'Hello, PFK 2!' });
+  res.send({ message: 'Hello World!' });
 });
 
 module.exports = app;
