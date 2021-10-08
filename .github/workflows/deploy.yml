@@ -21,7 +21,7 @@ jobs:
       - name: Deploy to EC2
         uses: garygrossgarten/github-action-ssh@release
         with:
-          command: ls -a
+          command: bash deploy.sh
           username: ubuntu
           host: ${{ secrets.HOST }}
           privateKey: ${{ secrets.PRIVATE_KEY }}
